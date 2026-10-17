@@ -1,0 +1,21 @@
+name: Epic
+description: An outcome made of stories; add the stories as sub-issues
+type: Epic
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true when this epic is done, and why it matters now.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope
+      description: What this epic deliberately does not do.
+  - type: input
+    id: decision
+    attributes:
+      label: Decision record
+      description: The ADR or SPEC section that records the decisions.

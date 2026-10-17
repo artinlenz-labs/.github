@@ -1,0 +1,32 @@
+name: Story
+description: One capability a user can see, with acceptance criteria
+type: Story
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      description: Who wants what, and why.
+      placeholder: As Artin, I ... so that ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Observable results that make this story done.
+      placeholder: "- ..."
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: How it will be tested
+      description: Unit or integration tests, smoke runs, UI tests, live checks.
+    validations:
+      required: true
+  - type: input
+    id: decision
+    attributes:
+      label: Decision record
+      description: The ADR or SPEC section, if the story adds or changes a decision.
