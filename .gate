@@ -1,0 +1,1 @@
+ruby -ryaml -e 'Dir.glob("**/*.yml").each { |f| YAML.safe_load(File.read(f)); puts "ok #{f}" }'
