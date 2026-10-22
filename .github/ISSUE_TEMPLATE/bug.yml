@@ -16,7 +16,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: done
+    id: acceptance
     attributes:
-      label: Done when
-      description: The test that fails before the fix and passes after it.
+      label: Acceptance criteria
+      description: The test that fails before the fix and passes after it; one checklist item each. The local-gate merge guard requires this section.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true

@@ -13,9 +13,9 @@ body:
   - type: textarea
     id: acceptance
     attributes:
-      label: Acceptance
-      description: Observable results that make this story done.
-      placeholder: "- ..."
+      label: Acceptance criteria
+      description: Observable results that make this story done; one checklist item each. The local-gate merge guard requires this section.
+      placeholder: "- [ ] ..."
     validations:
       required: true
   - type: textarea
